@@ -10,7 +10,7 @@ btnCadastrar.addEventListener("click", cadastrarProduto);
 btnNovoProduto.addEventListener("click", toggleFormInsert);
 btnAtualizar.addEventListener("click", updateProduct);
 
-function cadastrarProduto() {
+function cadastrarProduto() {  // A função esta adicionando coisas a um array
   id += 1;
   const nome = query("#nome").value;
   const preco = query("#preco").value;
@@ -29,7 +29,7 @@ function cadastrarProduto() {
   listarProdutos();
 }
 
-function listarProdutos() {
+function listarProdutos() {  // A função eta pegando os proutos de uma array e esta colocando em um formato de tabela juntamente com dois botões de atualizar e eletar  
   const tbodyProdutos = query("#tbody-produtos");
   tbodyProdutos.innerHTML = "";
   for (let i = 0; i < produtos.length; i++) {
@@ -45,7 +45,7 @@ function listarProdutos() {
   }
 }
 
-function deleteProduct(id) {
+function deleteProduct(id) { // A função esta deletado os itens do array especifiado
   for (let i = 0; i < produtos.length; i++) {
     if (produtos[i].id === id) {
       produtos.splice(i, 1);
@@ -55,21 +55,21 @@ function deleteProduct(id) {
 
   listarProdutos();
 }
-function toggleFormInsert() {
+function toggleFormInsert() { // Ele troca a classe do form
   const formInsert = query("#form-insert");
 
   formInsert.classList.toggle("display-none");
   formInsert.classList.toggle("display-flex");
 }
 
-function toggleFormUpdate() {
+function toggleFormUpdate() { // Ele troca a classe do form
   const formUpdate = query("#form-update");
 
   formUpdate.classList.toggle("display-none");
   formUpdate.classList.toggle("display-flex");
 }
 
-function getInfoProduct(id) {
+function getInfoProduct(id) { // Aqui a função esta pegando as informações do array 
   foundId = id;
   toggleFormUpdate();
 
@@ -85,7 +85,7 @@ function getInfoProduct(id) {
   }
 }
 
-function updateProduct() {
+function updateProduct() { // Aqui a função esta atualizando as informações do array 
   for (let i = 0; i < produtos.length; i++) {
     if (produtos[i].id === foundId) {
       produtos[i].nome = query("#nomeUpdate").value;
