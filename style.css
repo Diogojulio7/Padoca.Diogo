@@ -1,0 +1,86 @@
+body{
+background-color: rgb(246, 248, 105);
+  margin:  6rem;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#tabela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(27, 90, 145);
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 0.4rem solid black;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#cadastrar{
+    
+    margin-top: 0.5rem;
+     background-color: rgb(43, 153, 226);
+     border-radius: 3rem;
+     display: flex;
+     margin-bottom: 2rem;
+     width: 10%;
+} 
+
+#update{
+    margin-top: 0.5rem;
+     background-color: rgb(43, 153, 226);
+     border-radius: 3rem;
+     display: flex;
+     margin-bottom: 2rem;
+     width: 10%;
+}
+
+#new-product{
+    padding-left: 2rem;
+    padding-right: 2rem;
+     background-color: rgb(43, 153, 226);
+     border-radius: 3rem;
+     margin-bottom: 2rem;
+     display: flex;
+}
+
+form{
+    
+    background-color: rgb(159, 202, 240);
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 0.2rem solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+}
+tr{
+    
+}
+
+#bt{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+     background-color: rgb(236, 51, 181);
+     border-radius: 3rem;
+     margin-bottom: 2rem;
+     display: flex;
+}
+
+input{
+    border-radius: 3rem;
+    border: 0.1rem solid black;
+}
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+}
